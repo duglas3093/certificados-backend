@@ -4,9 +4,9 @@ namespace app\controllers;
 use yii\rest\ActiveController;
 use yii\web\Response;
 
-class CategoriesController extends ActiveController
+class TemplateController extends ActiveController
 {
-    public $modelClass = 'app\models\Categories';
+    public $modelClass = 'app\models\CertificateTemplate';
     public function behaviors() {
         $behaviors = parent::behaviors();
         $behaviors['contentNegotiator'] = [

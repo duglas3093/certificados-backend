@@ -2,11 +2,10 @@
 namespace app\controllers;
 
 use yii\rest\ActiveController;
-use yii\web\Response;
 
-class CategoriesController extends ActiveController
+class CertificatesController extends ActiveController
 {
-    public $modelClass = 'app\models\Categories';
+    public $modelClass = 'app\models\Certificates';
     public function behaviors() {
         $behaviors = parent::behaviors();
         $behaviors['contentNegotiator'] = [
@@ -17,4 +16,4 @@ class CategoriesController extends ActiveController
         ];
         return $behaviors;
     }
-}
+} 

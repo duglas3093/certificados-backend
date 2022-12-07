@@ -58,7 +58,17 @@ $config = [
             'enableStrictParsing' => true,
             'showScriptName' => false,
             'rules' => [
-                ['class' => 'yii\rest\UrlRule', 'controller' => 'categories'],
+                ['class' => 'yii\rest\UrlRule', 'controller' => [
+                    'categories',
+                    'students',
+                    'generes',
+                    'certificates',
+                    'courses',
+                    'instructor',
+                    'state',
+                    'template',
+                    ]
+                ],
             ],
         ],
     ],
